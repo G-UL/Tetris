@@ -112,13 +112,13 @@ Tetromino
 	rotatedPosition()
 	{
 		 int[][] result = clonePosition();
-        for (int[] row : result)
-        {
-            int buffer = row[0];
-            row[0] = row[1];
-            row[1] = -buffer;
-        }
-        return result;
+		for (int[] row : result)
+		{
+			int buffer = row[0];
+			row[0] = row[1];
+			row[1] = -buffer;
+		}
+		return result;
 	}
 
 
@@ -126,12 +126,12 @@ Tetromino
 	void
 	rotate()
 	{
-        for (int[] row : this.position)
-        {
-            int buffer = row[0];
-            row[0] = row[1];
-            row[1] = -buffer;
-        }
+		for (int[] row : this.position)
+		{
+			int buffer = row[0];
+			row[0] = row[1];
+			row[1] = -buffer;
+		}
 	}
 
 

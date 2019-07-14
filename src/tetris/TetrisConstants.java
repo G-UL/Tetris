@@ -16,10 +16,10 @@ TetrisConstants
 	DOWNWARD = 1,
 	EMPTY = -1,
 	INITIAL_COLUMN = 6,
-    INITIAL_ROW = 1,
-    LEFTWARD = -1,
-    NO_MOVEMENT = 0,
-    RIGHTWARD = 1,
+	INITIAL_ROW = 1,
+	LEFTWARD = -1,
+	NO_MOVEMENT = 0,
+	RIGHTWARD = 1,
 	ROWS = 18;
 
 

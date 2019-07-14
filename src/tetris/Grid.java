@@ -47,21 +47,21 @@ Grid
 	{
 		for (int row = 0; row < rows; row++)
 		{
-            for (int column = 0; column < TetrisConstants.COLUMNS; column++)
-            {
-            	// Sets Border for this Board
-                if (column == 0 ||
-                	column == TetrisConstants.COLUMNS - 1 ||
-                	row == TetrisConstants.ROWS - 1)
-                {
-                    this.grid[row][column] = TetrisConstants.BORDER;
-                }
-                // Sets Empty position of this Grid.
-                else
-                {
-                	this.grid[row][column] = TetrisConstants.EMPTY;
-                }
-            }
+			for (int column = 0; column < TetrisConstants.COLUMNS; column++)
+			{
+				// Sets Border for this Board
+				if (column == 0 ||
+					column == TetrisConstants.COLUMNS - 1 ||
+					row == TetrisConstants.ROWS - 1)
+				{
+					this.grid[row][column] = TetrisConstants.BORDER;
+				}
+				// Sets Empty position of this Grid.
+				else
+				{
+					this.grid[row][column] = TetrisConstants.EMPTY;
+				}
+			}
 		}
 	}
 
@@ -95,8 +95,8 @@ Grid
 	{
 		if (row < TetrisConstants.NO_MOVEMENT ||
 			row >= TetrisConstants.ROWS ||
-       	    column == TetrisConstants.NO_MOVEMENT ||
-       	    column > TetrisConstants.COLUMNS)
+			column == TetrisConstants.NO_MOVEMENT ||
+			column > TetrisConstants.COLUMNS)
 		{
 			return false;
 		}
@@ -191,14 +191,14 @@ Grid
 				 int currentColumn)
 	{
 		for (int[] row : tetromino.getPosition())
-	    {
-	      	int
-	      	newRow = currentRow + row[1],
-	      	newColumn = currentColumn + row[0];
-	      	setColor(newRow,
-	      			 newColumn,
-	      			 tetromino.getReference());
-	    }
+		{
+			int
+			newRow = currentRow + row[1],
+			newColumn = currentColumn + row[0];
+			setColor(newRow,
+					 newColumn,
+					 tetromino.getReference());
+		}
 	}
 
 
@@ -264,7 +264,7 @@ Grid
 	}
 
 
- 	public
+	public
 	int
 	getColor(int row,
 			 int column)
@@ -273,10 +273,10 @@ Grid
 	}
 
 
- 	/**
- 	 * Prints grid.
- 	 * The purpose of this function is for debugging.
- 	 */
+	/**
+	 * Prints grid.
+	 * The purpose of this function is for debugging.
+	 */
 	public
 	void
 	printGrid()

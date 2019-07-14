@@ -7,7 +7,7 @@ TShape extends Tetromino
 {
 	public
 	TShape(int[][] shape,
-	   	   int reference)
+		   int reference)
 	{
 		super(shape,
 			  reference);

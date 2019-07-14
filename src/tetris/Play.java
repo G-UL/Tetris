@@ -25,12 +25,12 @@ Play
 	main(String[] args)
 	{
 		// Initializes the JFrame.
-    	JFrame jFrame = new JFrame();
-    	jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    	jFrame.setTitle("Tetris");
-    	jFrame.setResizable(false);
-    	jFrame.setPreferredSize(UIConstants.FULL_DIMENSION);
-    	// Initializes the Instructional Panel.
+		JFrame jFrame = new JFrame();
+		jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jFrame.setTitle("Tetris");
+		jFrame.setResizable(false);
+		jFrame.setPreferredSize(UIConstants.FULL_DIMENSION);
+		// Initializes the Instructional Panel.
 		Instruction instruction = new Instruction ();
 		jFrame.add(instruction);
 		// Initializes the Tetris Panel.
